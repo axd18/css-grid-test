@@ -1,0 +1,22 @@
+.header{
+    display: grid;
+    min-height: 10vh;
+    grid-template-columns: 100%;
+    /* grid-template-rows: repeat(6fr); */
+    background: #f2f2f2;
+}
+
+.collage{
+    display: grid;
+    grid-template-columns: 100%;
+}
+.txtUno{order: 0;}
+.img{order: 1;}
+.txtDos{order: 2;}
+
+@media screen and (min-width: 64em){
+    .collage{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
